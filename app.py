@@ -57,7 +57,7 @@ if prompt := st.chat_input("질문을 입력하세요..."):
             
             try:
                 completion = client.chat.completions.create(
-                    model="llama3-8b-8192",
+                    model="llama-3.1-8b-instant",
                     messages=st.session_state.messages,
                     stream=True
                 )
